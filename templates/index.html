@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<title>Loan Prediction</title>
+
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 20px;
+    }
+
+    
+    h1 {
+      text-align: center;
+      color: #333;
+      background-color: #4caf50;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>LOAN DEFAULTER PREDICTION</h1>
+  <form action="/prediction" method="post">
+    <div>
+      <label for="Yearly_Income">Yearly Income:</label>
+      <input type="number" id="Yearly_Income" name="Yearly_Income" placeholder="Enter yearly income" required>
+    </div>
+
+    <div>
+      <label for="Total_Unpaid_CL">Total Unpaid CL:</label>
+      <input type="number" id="Total_Unpaid_CL" name="Total_Unpaid_CL" placeholder="Enter total unpaid CL" required>
+    </div>
+
+    <div>
+    <label for="Unpaid_Amount">Unpaid Amount:</label>
+    <input type="number" id="Unpaid_Amount" name="Unpaid_Amount" placeholder="Enter total unpaid Amount" required>
+    </div>
+
+    <div>
+    <label for="Account_Open">Account Open:</label>
+    <input type="number" id="Account_Open" name="Account_Open" placeholder="Enter total Account Open" required>
+    </div>
+
+    <div>
+    <label for="Debt_to_Income">Debt to Income:</label>
+    <input type="number" id="Debt_to_Income" name="Debt_to_Income" placeholder="Enter total Income to Debt to Income" required>
+    </div>
+
+    <div>
+    <label for="Lend_Amount">Lend Amount:</label>
+    <input type="number" id="Lend_Amount" name="Lend_Amount" placeholder="Enter total Lend Amount" required>
+    </div>
+
+    <div>
+    <label for="Sub_GGGrade">Sub GGGrade:</label>
+    <input type="number" id="Sub_GGGrade" name="Sub_GGGrade" placeholder="Enter Sub GGGrade" required>
+    </div>
+    
+
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+
+</body>
+
+</html>
