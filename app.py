@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request
 import pickle
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 @app.route('/')
 def hello():
@@ -25,7 +25,7 @@ def predict():
         prediction = model.predict(features)
         print(prediction)
         
-        defaulter_mapping = {0: 'Non-Defaulter', 1: 'Defaulter'}
+        defaulter_mapping = {0: 'NON-DEFAULTER', 1: 'DEFAULTER'}
         predicted_result = defaulter_mapping[prediction[0]]
 
     return render_template("prediction.html", result=predicted_result)

@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
-
 <title>Loan Prediction</title>
-
+<link type="jpg" rel="icon" href="static/icon.jpg">
 <head>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 20px;
+      background-image: url('{{ url_for("static", filename="background.png") }}');
+            background-size: cover;
+            background-position: center;
+            justify-content: center;
+            align-items: center;
     }
-
     
     h1 {
       text-align: center;
-      color: #333;
-      background-color: #4caf50;
+      color: #000000;
+      background-color: #31b05f;
       padding: 20px;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -23,7 +24,7 @@
 
 
     form {
-      background-color: #fff;
+      background-color:rgba(255, 255, 255, 0.8);
       padding: 20px;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -32,6 +33,7 @@
     }
 
     label {
+      font-display: #000000;
       display: block;
       margin-bottom: 8px;
     }
@@ -41,6 +43,9 @@
       padding: 8px;
       margin-bottom: 12px;
       box-sizing: border-box;
+      border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
     }
 
     input[type="submit"] {
@@ -48,6 +53,10 @@
       color: white;
       cursor: pointer;
     }
+
+    input[type="submit"]:hover {
+            background-color: #45a049;
+        }
   </style>
 </head>
 
